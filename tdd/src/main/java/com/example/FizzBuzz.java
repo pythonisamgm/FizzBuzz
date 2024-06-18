@@ -4,12 +4,19 @@ public class FizzBuzz {
 
     private int number;
 
-    public FizzBuzz(int num) {
-        this.number = num;
-
+    public FizzBuzz(String input) {
+        try {
+            this.number = Integer.parseInt(input);
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Input is not a valid number");
+        }
+    }
+    public FizzBuzz (int num){
+        this.number=num;
     }
 
     public int printNumber() {
+
         return this.number;
     }
 

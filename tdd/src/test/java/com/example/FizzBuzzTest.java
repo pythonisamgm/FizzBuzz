@@ -24,15 +24,13 @@ public class FizzBuzzTest {
         String fizzBuzzMethod = fizzBuzz.fizzBuzzKata();
     //assert
         assertEquals("Fizz", fizzBuzzMethod);
-
-
     }
 
     //test if number is not a multiply of 3 return number
     @Test
     void test_if_number_is_a_multiply_of_5_return_buzz() {
     //Arrange
-        FizzBuzz fizzBuzz = new FizzBuzz(150);
+        FizzBuzz fizzBuzz = new FizzBuzz(5);
     //act
         String printBuzzMethod = fizzBuzz.fizzBuzzKata();
     //assert
