@@ -14,18 +14,15 @@ public class FizzBuzz {
     }
 
     public String fizzBuzzKata() {
-        if (this.number % 3 == 0) {
+        if (this.number % 5 == 0 && this.number % 3 == 0) {
+            return "FizzBuzz";
+        }else if (this.number % 3 == 0) {
             return "Fizz";
         }else if (this.number % 5 == 0) {
             return "Buzz";
-        }else if (this.number % 5 == 0 && this.number % 3 == 0) {
-            return "FizzBuzz";
         }
         else {
             return Integer.toString(this.number);
         }
     }
-
-    
-
 }
