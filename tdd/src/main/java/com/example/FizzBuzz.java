@@ -15,7 +15,6 @@ public class FizzBuzz {
         this.number=num;
     }
 
-
     public String fizzBuzzKata() {
         if (this.number % 5 == 0 && this.number % 3 == 0) {
             return "FizzBuzz";

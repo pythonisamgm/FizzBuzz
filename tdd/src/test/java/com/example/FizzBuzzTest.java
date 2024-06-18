@@ -2,9 +2,20 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class FizzBuzzTest {
+    @Test
+    void test_if_string_constructor_catches_exceptions(){
+        String invalidInput = "casa";
+        //act
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
+            new FizzBuzz(invalidInput);
+        });
+        //assert
+        assertEquals("Input is not a valid number", exception.getMessage());
+    }
 
     @Test
     void test_if_the_input_is_a_number_return_number() {
