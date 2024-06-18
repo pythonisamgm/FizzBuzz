@@ -11,9 +11,9 @@ public class FizzBuzzTest {
     //Arrange
         FizzBuzz fizzBuzz = new FizzBuzz(2);
     //act
-        int fizzBuzzMethod = fizzBuzz.printNumber();
+        String fizzBuzzMethod = fizzBuzz.fizzBuzzKata();
     //assert
-        assertEquals(2, fizzBuzzMethod);}
+        assertEquals("2", fizzBuzzMethod);}
 //test if input is not a number return "that is not a number"
 
     @Test
