@@ -2,18 +2,18 @@ package com.example;
 
 public class FizzBuzz {
 
-    int number;
+    private int number;
 
-    public FizzBuzz(int number) {
-        this.number = number;
+    public FizzBuzz(int num) {
+        this.number = num;
 
     }
 
-    public int printNumber(int number) {
-        return number;
+    public int printNumber() {
+        return this.number;
     }
 
-    public String printFizz(int number) {
+    public String printFizz() {
         if (this.number % 3 == 0) {
             return "Fizz";
         } else {
@@ -21,7 +21,7 @@ public class FizzBuzz {
         }
     }
 
-    public String printBuzz(int number) {
+    public String printBuzz() {
         if (this.number % 5 == 0) {
             return "Buzz";
         }else {
@@ -29,7 +29,7 @@ public class FizzBuzz {
         }
     }
 
-    public String printFizzBuzz(int number) {
+    public String printFizzBuzz() {
         if (this.number % 5 == 0 && this.number % 3 == 0) {
             return "FizzBuzz";
         } else {

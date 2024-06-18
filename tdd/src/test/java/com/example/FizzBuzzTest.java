@@ -2,50 +2,53 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class FizzBuzzTest {
     
-    /*@Test
+    @Test
     void test_if_the_input_is_a_number_return_number() {
     //Arrange
-        FizzBuzz fizzBuzz = new FizzBuzz(0);
+        FizzBuzz fizzBuzz = new FizzBuzz(2);
     //act
-        int metodoDeFizzBuzz = fizzBuzz.printNumber(2);
+        int metodoDeFizzBuzz = fizzBuzz.printNumber();
     //assert
-        assertEquals(2, metodoDeFizzBuzz);}*/
-
+        assertEquals(2, metodoDeFizzBuzz);}
+//test if input is not a number return "that is not a number"
     
     @Test
-    void test_if_print_fizz_prints__fizz() {
+    void test_if_number_is_a_multiply_of_3_return_fizz() {
     //Arrange
-        FizzBuzz fizzBuzz = new FizzBuzz(0);
+        FizzBuzz fizzBuzz = new FizzBuzz(21);
     //act
-        String printFizzMetodo = fizzBuzz.printFizz(20);
+        String printFizzMetodo = fizzBuzz.printFizz();
     //assert
         assertEquals("Fizz", printFizzMetodo);
         
 
     }
+
+    //test if number is not a multiply of 3 return number
     @Test
-    void test_if_print_buzz_prints__buzz() {
+    void test_if_number_is_a_multiply_of_5_return_buzz() {
     //Arrange
-        FizzBuzz fizzBuzz = new FizzBuzz(0);
+        FizzBuzz fizzBuzz = new FizzBuzz(150);
     //act
-        String printBuzzMethod = fizzBuzz.printBuzz(15);
+        String printBuzzMethod = fizzBuzz.printBuzz();
     //assert
         assertEquals("Buzz", printBuzzMethod);
         
 
     }
+    //test if number is not a multiply of 5 return number
     @Test
-    void test_if_print_fizzbuzz_prints_fizzbuzz(){
+    void test_if_number_is_a_multiply_of_3_and_5_return_fizzbuzz(){
     //Arrange
-        FizzBuzz fizzBuzz = new FizzBuzz(0);
+        FizzBuzz fizzBuzz = new FizzBuzz(23);
     //act
-        String printFizzBuzzMethod = fizzBuzz.printFizzBuzz(6);
+        String printFizzBuzzMethod = fizzBuzz.printFizzBuzz();
     //assert
         assertEquals("FizzBuzz", printFizzBuzzMethod);
     }
+    //test if number is not a multiply of 3 or 5 return number
 }
