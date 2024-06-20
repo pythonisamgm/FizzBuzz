@@ -37,7 +37,7 @@ public class FizzBuzzTest {
         assertEquals("Fizz", fizzBuzzMethod);
     }
 
-    //test if number is not a multiply of 3 return number
+
     @Test
     void test_if_number_is_a_multiply_of_5_return_buzz() {
     //Arrange
@@ -49,7 +49,7 @@ public class FizzBuzzTest {
 
 
     }
-    //test if number is not a multiply of 5 return number
+
     @Test
     void test_if_number_is_a_multiply_of_3_and_5_return_fizzbuzz(){
     //Arrange
@@ -59,5 +59,24 @@ public class FizzBuzzTest {
     //assert
         assertEquals("FizzBuzz", printFizzBuzzMethod);
     }
-    //test if number is not a multiply of 3 or 5 return number
+
+
+    @Test
+    void test_if_number_contains_3_and_return_fizz(){
+        //Arrange
+        FizzBuzz fizzBuzz = new FizzBuzz(23);
+        //act
+        String printFizzBuzzMethod = fizzBuzz.fizzBuzzKata();
+        //assert
+        assertEquals("Fizz", printFizzBuzzMethod);
+    }
+    @Test
+    void test_if_number_contains_5_and_return_buzz(){
+        //Arrange
+        FizzBuzz fizzBuzz = new FizzBuzz(51);
+        //act
+        String printFizzBuzzMethod = fizzBuzz.fizzBuzzKata();
+        //assert
+        assertEquals("Buzz", printFizzBuzzMethod);
+    }
 }
